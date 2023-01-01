@@ -6,6 +6,9 @@ function start(){
 
     //segundos
     segundo.innerHTML = document.getElementById("inputSeg").value
+    if(segundo.innerHTML == ""){
+        segundo.innerHTML = 0
+    }
 
     //minuto
     minuto.innerHTML = document.getElementById("inputMin").value
