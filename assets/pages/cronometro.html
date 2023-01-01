@@ -10,57 +10,56 @@
 <body>
 
     <div id="div-geral">
-        <div id="title">
-            <h1>It's time</h1>
-        </div>
+
+        <a href="../../index.html">
+            <div id="title">
+                <h1>It's time</h1>
+            </div>
+        </a>
 
         <div id="links-pages">
             <a href="../../index.html">Hora atual</a>
 
-            <a class="crono" onclick="mudarCronometro()" href="">Cronômetro</a>
+            <a class="crono" href="">Cronômetro</a>
 
-            <a href="">Contador</a>
+            <a href="../../assets/pages/contador.html">Contador</a>
         
         </div>
 
-
         <div id="content">
             <div class="content-div">
-                <span>0</span>
+                <span id="hora-cronometro">0</span>
                 <p>Horas</p>
             </div>
 
-
             <div class="content-div">
-                <span>0</span>
+                <span id="minuto-cronometro">0</span>
                 <p>Minutos</p>
             </div>
 
-
             <div class="content-div">
-                <span>0</span>
+                <span id="segundo-cronometro">0</span>
                 <p>Segundos</p>
             </div>
             
-
         </div>
 
+        <div id="inputs">
 
-
+            <div id="inputs-values">
+                <input type="number" name="" id="inputHora" placeholder="Hora">
+                <input type="number" name="" id="inputMin" placeholder="Minutos">
+                <input type="number" name="" id="inputSeg" placeholder="Segundos">
+            </div>
+            
+            <div id="inputs-btn">
+                <input type="button" value="Iniciar" onclick="start()">
+                <input type="button" value="Reiniciar" onclick="restart()">
+            </div>
+        </div>
+     
     </div>
     
-
-
-
-    
-
-
-
-    
-
-
-
-    
-    <script src="assets/js/cronometro.js"></script>
+    <script src="../js/cronometro.js" defer></script>
 </body>
 </html>

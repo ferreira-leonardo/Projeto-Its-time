@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/horaAtual.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <title>It's Time</title>
 </head>
 <body>
 
     <div id="div-geral">
-        <div id="title">
-            <h1>It's time</h1>
-        </div>
 
+        <a href="index.html">
+            <div id="title">
+                <h1>It's time</h1>
+            </div>
+        </a>
+        
         <div id="links-pages">
             <a href="">Hora atual</a>
 
             <a class="crono" onclick="mudarCronometro()" href="assets/pages/cronometro.html">Cronômetro</a>
 
-            <a href="">Contador</a>
+            <a href="assets/pages/contador.html">Contador</a>
         
         </div>
-
 
         <div id="content">
 
@@ -45,22 +47,9 @@
 
         </div>
 
-
-
     </div>
     
-
-
-
-    
-
-
-
-    
-
-
-
-    <script src="assets/js/horaAtual.js"></script>
-    <script src="assets/js/cronometro.js"></script>
+    <script src="assets/js/horaAtual.js" defer></script>
+    <script src="assets/js/cronometro.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contador.css">
+    <title>It's Time</title>
+</head>
+<body>
+
+    <div id="div-geral">
+
+        <a href="../../index.html">
+            <div id="title">
+                <h1>It's time</h1>
+            </div>
+        </a>
+
+        <div id="links-pages">
+            <a href="../../index.html">Hora atual</a>
+
+            <a class="crono" href="cronometro.html">Cronômetro</a>
+
+            <a href="contador.html">Contador</a>
+        
+        </div>
+
+        <div id="content">
+            <div class="content-div">
+                <span id="hora-cont">0</span>
+                <p>Horas</p>
+            </div>
+
+            <div class="content-div">
+                <span id="minuto-cont">0</span>
+                <p>Minutos</p>
+            </div>
+
+            <div class="content-div">
+                <span id="segundo-cont">0</span>
+                <p>Segundos</p>
+            </div>
+            
+        </div>
+
+        <div id="inputs">
+
+            <div id="inputs-btn">
+                <input type="button" value="Iniciar" onclick="startContador()">
+                <input type="button" value="Reiniciar" onclick="restartContador()">
+            </div>
+        </div>
+     
+    </div>
+    
+    <script src="../js/contador.js" defer></script>
+</body>
+</html>

@@ -8,7 +8,7 @@
 }
 
 body{
-    height: 150vh;
+    height: 100vh;
     text-transform: uppercase;
     background: linear-gradient(-40deg,#5932E6,#8632E6, #B332E6);
     
@@ -58,7 +58,7 @@ a{
     background-color: rgba(5, 5, 5, 0.9);
 }
 
-#links-pages :nth-child(2){
+#links-pages :nth-child(1){
     border: 2px solid rgba(0, 0, 0, 0.2);
     box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
     background-color: #8632E6;
@@ -97,47 +97,6 @@ a{
     font-size: .8rem;
 }
 
-#inputs{
-    display: flex;
-    flex-direction: column;
-    margin: 40px auto;
-}
-
-#inputs-values input{
-    width: 80px;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
-    background-color: rgba(5, 5, 5, 0.9);
-    border: none;
-    outline: none;
-}
-
-#inputs-btn{
-    margin: 20px auto;
-}
-
-#inputs-btn input{
-    width: 80px;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.6);
-    background-color: rgba(5, 5, 5, 0.9);
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-
-#inputs-btn :nth-child(1){
-    color: green;
-}
-
-#inputs-btn :nth-child(2){
-    color: red;
-}
-
 @media (max-width: 600px){
     #title h1{
         font-size: 3rem;
@@ -156,27 +115,5 @@ a{
     #content{
         flex-direction: column;
         align-items: center;
-    }    
-}
-
-@media (max-width: 375px){
-    #inputs-values{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        align-items: center;
-    }
-
-    #inputs{
-        order: 1;
-    }
-
-    #content{
-        order: 2;
-    }
-
-    #links-pages{
-        margin: 6rem auto 2rem auto;
     }
 }
-
