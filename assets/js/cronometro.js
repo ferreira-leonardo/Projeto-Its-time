@@ -2,8 +2,19 @@ const hora = document.getElementById("hora-cronometro")
 const minuto = document.getElementById("minuto-cronometro")
 const segundo = document.getElementById("segundo-cronometro")
 
+let ativeInterval;
+
+
+
 function start(){
 
+    //Reseta o setInterval "ativeInterval" 
+    if(localStorage.getItem("ativeInterval") == 1){
+        clearInterval(ativeInterval)
+        localStorage.setItem("ativeInterval", 0)
+    
+    }
+    
     //segundos
     segundo.innerHTML = document.getElementById("inputSeg").value
     if(segundo.innerHTML == ""){
@@ -36,7 +47,7 @@ function start(){
         segundo.innerHTML = 59
     }
     
-    setInterval(
+    ativeInterval = setInterval(
         function startCronometro(){
             segundo.innerHTML--
             segundo.innerHTML <= 0 ? segundo.innerHTML = 0 : segundo.innerHTML;
@@ -64,7 +75,10 @@ function start(){
             }
         }
     , 1000)
+
+   localStorage.setItem("ativeInterval", 1)
 }
+
 
 function restart(){
     location.reload()
